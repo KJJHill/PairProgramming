@@ -33,10 +33,10 @@ body{    color: green;}
 .Nav_Bar li {
 list-style-type: none;
 }
-.body-container img{background-color: white;}
+.body-container img{background-color: white; margin:10px;}
 
 .body-container .section
-{background-color:  #ccffcc;}
+{background-color:  #ccffcc;padding: 10px;}
 
 .body-container li,p{color: black; }
 
