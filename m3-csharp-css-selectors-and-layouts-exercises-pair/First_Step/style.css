@@ -47,6 +47,7 @@ body {
 .body-container {
     margin: 50px 50px 0 50px;
     display: flex;
+     align-items: flex-start;
 }
 
 .body-container img {
@@ -60,7 +61,7 @@ body {
     width: 400px;
     margin: auto;
     display: inline-block;
-    vertical-align: top;
+   
     background-color: #ccffcc;
     padding: 10px;
 }
