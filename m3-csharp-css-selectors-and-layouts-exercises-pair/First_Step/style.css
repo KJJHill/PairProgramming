@@ -2,16 +2,16 @@
 body{    color: green;}
 .header-image {
     width: 600px;
-    height: 30px;
-    padding: 2px 0 0 0;
+    height: 35px;
+    padding: 10px ;
 }
 
 .header {
-    background-color: gray;
+    background-color: #303030 ;
     width: 100%;
-    height: 70px;
+    height: 110px;
     margin: 0;
-    padding: 0;
+    padding-left: 10px;
 }
 
 .header p {
@@ -19,9 +19,12 @@ body{    color: green;}
 }
 
 .Nav_Bar{
-     background-color:#F5F5F5; 
-     padding: 0;
-     margin: 0;
+     background:#E0E0E0; 
+     padding: 10px 10px 0 0;
+     margin-bottom: 20px;
+     width: 100%;
+     height: 100px;
+
 
 }
 .Nav_Bar a {
@@ -33,6 +36,8 @@ body{    color: green;}
 .Nav_Bar li {
 list-style-type: none;
 }
+
+.body-container {margin: 50px 50px 0 50px;}
 .body-container img{background-color: white; margin:10px;}
 
 .body-container .section
@@ -40,4 +45,4 @@ list-style-type: none;
 
 .body-container li,p{color: black; }
 
-footer {background-color:  gray; color: black;}
+footer {background-color:  gray; color: black; padding:10px }
