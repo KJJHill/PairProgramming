@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "BankAccountList";
+}
+@model List<FlyByNight.Web.Models.BankAccount>
+<div class="accountSection">
+    <div class="accountHeader">
+        <table align="center">
+            <tr>
+                <th></th>
+                <th>Nick Name </th>
+                <th>Account Number</th>
+                <th>Balance</th>
+            </tr>
+            @foreach (var acount in Model)
+            {
+                <tr>
+                    <td>@Html.ActionLink("View", "BankAccountDetail",new {acount.Id})</td>
+                    <td>@acount.AccountNickname </td>
+                    <td>@acount.AccountNumber</td>
+                    <td>@acount.Balance</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

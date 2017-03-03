@@ -1,0 +1,35 @@
+﻿@using System.Web.Optimization
+@using System.Web.UI.WebControls
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Fly By Night Bank - @ViewBag.Title</title>
+    @Styles.Render("~/Content/style.css")
+
+</head>
+<body>
+    <header>
+        <img src="~/Content/img/flybynightlogo.png" alt="Fly By Night Bank" />
+        <p>At Fly By Night, we treat your money as if it's our own. Really. Our own.</p>
+    </header>
+    <nav>
+        <ul>
+            <li>@Html.ActionLink("Home","Index","Home")</li>
+            <li>@Html.ActionLink("Log In or Enroll", "LogIn", "Home")</li>
+            <li>@Html.ActionLink("Why Fly By Night", "About", "Home")</li>
+            <li>@Html.ActionLink("Bank Account List", "BankAccountList", "Home")</li>
+        </ul>
+    </nav>
+    <div class="container">
+        @RenderBody()
+       
+    </div>
+    <footer>
+        Fly By Night Bank | Varying Locations | josh@flybynightbank.com
+    </footer>
+
+
+</body>
+</html>

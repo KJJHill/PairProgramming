@@ -15,6 +15,15 @@ namespace FlyByNight.Web.Controllers
             return View();
         }
 
+        public ActionResult LogIn()
+        {
+            return View();
+        }
+        public ActionResult About()
+        {
+            return View();
+        }
+
         // GET: Home/BankAccountList
         public ActionResult BankAccountList()
         {
@@ -43,7 +52,22 @@ namespace FlyByNight.Web.Controllers
 
 
 
+        //public ActionResult BankAccountTransaction(string id)
+        //{
+        //    List<Transaction> transactions = GetBankAccounts();
+        //    BankAccount model = null;
 
+        //    foreach (var account in accounts)
+        //    {
+        //        if (id.ToLower() == account.Id.ToLower())
+        //        {
+        //            model = account;
+        //            break;
+        //        }
+        //    }
+
+        //    return View("BankAccountDetail", model);
+        //}
 
 
 
