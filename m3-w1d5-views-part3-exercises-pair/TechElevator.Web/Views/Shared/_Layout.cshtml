@@ -1,35 +1,26 @@
-﻿@using System.Web.Optimization
-@using System.Web.UI.WebControls
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Fly By Night Bank - @ViewBag.Title</title>
-    @Styles.Render("~/Content/style.css")
-
+    <title>Page Title</title>
+    <link rel="stylesheet" href="~/Content/style.css" />
 </head>
 <body>
     <header>
-        <img src="~/Content/img/flybynightlogo.png" alt="Fly By Night Bank" />
-        <p>At Fly By Night, we treat your money as if it's our own. Really. Our own.</p>
+        <h1>Movie Listing</h1>
     </header>
     <nav>
         <ul>
-            <li>@Html.ActionLink("Home","Index","Home")</li>
-            <li>@Html.ActionLink("Log In or Enroll", "LogIn", "Home")</li>
-            <li>@Html.ActionLink("Why Fly By Night", "About", "Home")</li>
-            <li>@Html.ActionLink("Bank Account List", "BankAccountList", "Home")</li>
+            <li>@Html.ActionLink("Movie List", "MovieList", "Home")</li>
+            <li>@Html.ActionLink("Nav Link 1", "MovieList", "Home")</li>
+            <li>@Html.ActionLink("Nav Link 2", "MovieList", "Home")</li>
+            <li>@Html.ActionLink("Nav Link 3", "MovieList", "Home")</li>
         </ul>
+
     </nav>
-    <div class="container">
+    <section id="main-content">
         @RenderBody()
-       
-    </div>
-    <footer>
-        Fly By Night Bank | Varying Locations | josh@flybynightbank.com
-    </footer>
-
-
+    </section>
 </body>
 </html>
